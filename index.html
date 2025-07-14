@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جزوه موازنه شیمی - دکتر پارسا فراهانی</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+        }
+        /* Custom styles for better readability and presentation */
+        .card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        h2 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #1e3a8a; /* Dark Blue */
+            border-bottom: 2px solid #3b82f6; /* Blue */
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #1d4ed8; /* Medium Blue */
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        p, li {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #374151; /* Gray-700 */
+        }
+        .formula {
+            direction: ltr;
+            display: inline-block;
+            font-family: 'Times New Roman', serif;
+            font-weight: bold;
+            color: #c026d3; /* Fuchsia */
+            background-color: #f3e8ff; /* Light Purple */
+            padding: 0.2rem 0.6rem;
+            border-radius: 6px;
+            font-size: 1.1rem;
+        }
+        .question {
+            background-color: #f0f9ff; /* Light Blue */
+            border-right: 4px solid #0284c7; /* Sky Blue */
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+            border-radius: 8px;
+        }
+        .note {
+            background-color: #fffbeb; /* Light Yellow */
+            border-right: 4px solid #facc15; /* Yellow */
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+        .question-number {
+            display: inline-block;
+            background-color: #1e3a8a;
+            color: white;
+            border-radius: 50%;
+            width: 2rem;
+            height: 2rem;
+            text-align: center;
+            line-height: 2rem;
+            font-weight: bold;
+            margin-left: 0.5rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <div class="container mx-auto p-4 sm:p-6 lg:p-8">
+
+        <!-- Header -->
+        <header class="text-center mb-10">
+            <h1 class="text-4xl font-extrabold text-gray-800">جزوه کامل موازنه واکنش‌های شیمیایی</h1>
+            <p class="text-lg text-gray-500 mt-2">بر اساس تدریس دکتر پارسا فراهانی</p>
+        </header>
+
+        <!-- Card 1: Introduction to Balancing -->
+        <div class="card">
+            <h2>موازنه اصلاً یعنی چی؟</h2>
+            <p>در همه‌ی واکنش‌های شیمیایی، اتم‌ها نه به وجود می‌آیند و نه از بین می‌روند؛ فقط شیوه اتصال اتم‌ها به هم‌دیگر عوض می‌شود. بنابراین تعداد و نوع اتم‌ها در یک واکنش شیمیایی تغییر نمی‌کند. یعنی:</p>
+            <div class="text-center bg-blue-50 p-4 my-4 rounded-lg border border-blue-200">
+                <p class="font-bold text-blue-800">تعداد اتم‌های هر عنصر در واکنش‌دهنده‌ها = تعداد اتم‌های همان عنصر در فرآورده‌ها</p>
+            </div>
+            <h3>مثال:</h3>
+            <div class="text-center my-4 p-4 bg-gray-100 rounded-lg">
+                <p class="text-2xl font-mono" dir="ltr">
+                    <span class="formula">N<sub>2</sub></span> + <span class="formula">3H<sub>2</sub></span> &rarr; <span class="formula">2NH<sub>3</sub></span>
+                </p>
+                <div class="flex justify-around mt-4 text-gray-700">
+                    <div>
+                        <p>۲ اتم N</p>
+                        <p>۶ اتم H</p>
+                    </div>
+                    <div>&rarr;</div>
+                    <div>
+                        <p>۲ اتم N</p>
+                        <p>۶ اتم H</p>
+                    </div>
+                </div>
+            </div>
+            <p>بنابراین چون پایستگی اتم داریم و اتم‌ها عوض نمی‌شوند، جرم هم تغییری نمی‌کند و می‌گویند <strong>پایستگی جرم</strong> برقرار است. یعنی:</p>
+             <div class="text-center bg-green-50 p-4 my-4 rounded-lg border border-green-200">
+                <p class="font-bold text-green-800">مجموع جرم واکنش‌دهنده‌ها = مجموع جرم فرآورده‌ها</p>
+            </div>
+            <h3>مثال:</h3>
+             <div class="text-center my-4 p-4 bg-gray-100 rounded-lg">
+                <p class="text-2xl font-mono" dir="ltr">
+                    <span class="formula">N<sub>2</sub></span> + <span class="formula">3H<sub>2</sub></span> &rarr; <span class="formula">2NH<sub>3</sub></span>
+                </p>
+                <div class="flex justify-around items-center mt-4 text-gray-700">
+                    <div>
+                        <p>28g + 6g</p>
+                        <p class="font-bold text-xl">34g</p>
+                    </div>
+                    <div>&rarr;</div>
+                    <div>
+                        <p>2 &times; 17g</p>
+                        <p class="font-bold text-xl">34g</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2: Conservation of Moles -->
+        <div class="card">
+            <h2>پایستگی مول و مولکول</h2>
+            <p>درسته که در یک واکنش شیمیایی پایستگی جرم و اتم داریم، ولی <strong>الزاماً پایستگی مول و پایستگی مولکول نداریم.</strong></p>
+             <div class="text-center my-4 p-4 bg-red-50 rounded-lg border border-red-200">
+                 <p class="text-2xl font-mono" dir="ltr">
+                    <span class="formula">1N<sub>2</sub></span> + <span class="formula">3H<sub>2</sub></span> &rarr; <span class="formula">2NH<sub>3</sub></span>
+                </p>
+                <div class="flex justify-around items-center mt-4 text-red-700">
+                    <div>
+                        <p>۱ مول + ۳ مول = ۴ مول</p>
+                        <p>۱ مولکول + ۳ مولکول = ۴ مولکول</p>
+                    </div>
+                    <div class="text-2xl font-bold">&ne;</div>
+                    <div>
+                        <p>۲ مول</p>
+                        <p>۲ مولکول</p>
+                    </div>
+                </div>
+            </div>
+            <h3>ربط اینها به موازنه چیست؟</h3>
+            <p>در واکنش شیمیایی به عددهای سمت چپ مواد می‌گویند <strong>ضرایب مولی</strong>. ما باید طوری ضرایب را قرار دهیم که تعداد اتم‌های هر عنصر در دو طرف برابر باشد تا واکنش از پایستگی اتم و پایستگی جرم پیروی کند. پس به این ضریب قرار دادن برای برابر کردن تعداد اتم‌ها در دو سمت واکنش، <strong>موازنه</strong> می‌گویند.</p>
+        </div>
+        
+        <!-- Card 3: How to Balance -->
+        <div class="card">
+            <h2>چجوری موازنه کنیم؟</h2>
+            <ol class="list-decimal list-inside space-y-4">
+                <li>به <strong>تپل‌ترین ماده</strong> (ماده‌ای با بیشترین تعداد اتم و تنوع عناصر) ضریب ۱ بده.
+                    <div class="note"><p><strong>عنصر تک‌پر:</strong> عنصری که هم در سمت چپ و هم در سمت راست واکنش، فقط در یک ماده وجود دارد.</p></div>
+                </li>
+                <li>در تپل‌ترین ماده که به آن ضریب ۱ دادی، هر چه عنصر تک‌پر داری، تعدادش را در ۲ سمت واکنش با ضریب دادن به بقیه مواد برابر کن. حواست به زیروندها باشد!</li>
+                <li>حالا که تک‌پرهای تپل‌ترین ماده تمام شد، عنصری را پیدا کن که در یک سمت تعدادش کاملاً مشخص باشد و در سمت دیگر فقط و فقط در یک ماده نامعلوم باشد. با این <strong>عنصرهای ادامه‌دهنده</strong> تا آخر پیش برو.</li>
+            </ol>
+            <h3 class="mt-6">نکات بسیار مهم:</h3>
+            <ul class="list-disc list-inside space-y-3 mt-4">
+                <li>هر موقع ضریب کسری شد، بلافاصله همه موادی که ضریب دارند را در مخرج کسر به وجود آمده ضرب کن.</li>
+                <li>اگر ماده‌ای ضریب ندارد، الزاماً ضریبش یک نیست!</li>
+                <li>پس از موازنه، ضرایب باید <strong>ساده‌ترین عدد طبیعی ممکن</strong> باشند، کسری نباشند و حق تغییر زیروندها را هم نداری.</li>
+            </ul>
+        </div>
+
+        <!-- Card 4: Practice Problems -->
+        <div class="card">
+            <h2>تمرین‌های موازنه</h2>
+            <div class="question">
+                <p><span class="question-number">۱</span>در واکنش زیر پس از موازنه مجموع ضرایب مواد شرکت کننده در واکنش کدام است؟</p>
+                <p class="formula mt-2">...KClO<sub>3</sub> + ...NaI + ...HCl &rarr; ...KCl + ...I<sub>2</sub> + ...NaCl + ...H<sub>2</sub>O</p>
+            </div>
+            <div class="question">
+                <p><span class="question-number">۲</span>در واکنش زیر پس از موازنه نسبت شمار مول‌های پتاسیم کلرید به شمار مول‌های پتاسیم یدید کدام است؟</p>
+                <p class="formula mt-2">...K<sub>2</sub>Cr<sub>2</sub>O<sub>7</sub> + ...KI + ...HCl &rarr; ...I<sub>2</sub> + ...CrCl<sub>3</sub> + ...H<sub>2</sub>O + ...KCl</p>
+            </div>
+            <div class="question">
+                <p><span class="question-number">۳</span>در واکنش زیر پس از موازنه مجموع ضرایب استوکیومتری فرآورده‌ها کدام است؟</p>
+                <p class="formula mt-2">...C<sub>2</sub>H<sub>5</sub>NS + ...O<sub>2</sub> &rarr; ...CO<sub>2</sub> + ...H<sub>2</sub>O + ...N<sub>2</sub> + ...SO<sub>2</sub></p>
+            </div>
+            <div class="question">
+                <p><span class="question-number">۴</span>در واکنش زیر پس از موازنه مجموع ضرایب استوکیومتری مواد کدام است؟</p>
+                <p class="formula mt-2">...K<sub>2</sub>CO<sub>3</sub> + ...Br<sub>2</sub> &rarr; ...KBrO<sub>3</sub> + ...KBr + ...CO<sub>2</sub></p>
+            </div>
+            <div class="question">
+                <p><span class="question-number">۵</span>در واکنش زیر پس از موازنه ضرایب چند گونه با یکدیگر برابر است؟</p>
+                <p class="formula mt-2">...Br<sub>2</sub> + ...NaOH &rarr; ...NaBr + ...NaBrO<sub>3</sub> + ...H<sub>2</sub>O</p>
+            </div>
+            <div class="question">
+                <p><span class="question-number">۶</span>در واکنش زیر پس از موازنه مجموع ضرایب ترکیب‌ها کدام است؟</p>
+                <p class="formula mt-2">...S<sub>2</sub>Cl<sub>2</sub> + ...NH<sub>3</sub> &rarr; ...S<sub>4</sub>N<sub>4</sub> + ...S<sub>8</sub> + ...NH<sub>4</sub>Cl</p>
+            </div>
+            <div class="question">
+                <p><span class="question-number">۷</span>مجموع ضرایب واکنش دهنده‌ها در واکنش زیر پس از موازنه کدام است؟</p>
+                <p class="formula mt-2">...Ca<sub>3</sub>(PO<sub>4</sub>)<sub>2</sub> + ...SiO<sub>2</sub> + ...C &rarr; ...P<sub>4</sub> + ...CaSiO<sub>3</sub> + ...CO</p>
+            </div>
+            <div class="question">
+                <p><span class="question-number">۸</span>در واکنش زیر پس از موازنه مجموع ضرایب استوکیومتری مواد کلسیم دار چند است؟</p>
+                <p class="formula mt-2">...Ca<sub>5</sub>(PO<sub>4</sub>)<sub>3</sub>F + ...H<sub>2</sub>SO<sub>4</sub> &rarr; ...Ca(H<sub>2</sub>PO<sub>4</sub>)<sub>2</sub> + ...CaSO<sub>4</sub> + ...HF</p>
+            </div>
+             <div class="question">
+                <p><span class="question-number">۹</span>کدام گزینه معادله موازنه شده واکنش <span class="formula">Mg<sub>3</sub>N<sub>2</sub> + H<sub>2</sub>O &rarr; Mg(OH)<sub>2</sub> + NH<sub>3</sub></span> را به درستی نشان می‌دهد؟</p>
+                <ol class="list-decimal list-inside mt-2 space-y-1 pr-4">
+                    <li><span class="formula">2Mg<sub>3</sub>N<sub>2</sub> + 12H<sub>2</sub>O &rarr; 6Mg(OH)<sub>2</sub> + 4NH<sub>3</sub></span></li>
+                    <li><span class="formula">Mg<sub>3</sub>N<sub>2</sub> + 3H<sub>2</sub>O &rarr; 3MgOH + NH<sub>3</sub></span></li>
+                    <li><span class="formula">Mg<sub>3</sub>N<sub>2</sub> + 6H<sub>2</sub>O &rarr; 3Mg(OH)<sub>2</sub> + 2NH<sub>3</sub></span></li>
+                    <li><span class="formula">&frac12;Mg<sub>3</sub>N<sub>2</sub> + 3H<sub>2</sub>O &rarr; &frac32;Mg(OH)<sub>2</sub> + NH<sub>3</sub></span></li>
+                </ol>
+            </div>
+            <div class="question">
+                <p><span class="question-number">۱۰</span>با توجه به شکل زیر که روند انجام یک واکنش گازی را نشان می‌دهد، معادله موازنه شده کدام است؟</p>
+                <!-- Placeholder for image. In a real scenario, you'd use an <img> tag. -->
+                <div class="text-center p-4 my-2 bg-gray-200 rounded-lg">[تصویر واکنش مولکول‌های A و B]</div>
+                <ol class="list-decimal list-inside mt-2 space-y-1 pr-4">
+                    <li><span class="formula">4A<sub>2</sub> + 7B<sub>2</sub> &rarr; 4AB<sub>3</sub></span></li>
+                    <li><span class="formula">4A<sub>2</sub> + 7B<sub>2</sub> &rarr; 4AB<sub>3</sub> + 2A<sub>2</sub> + B<sub>2</sub></span></li>
+                    <li><span class="formula">2A<sub>2</sub> + 6B<sub>2</sub> &rarr; 4AB<sub>3</sub></span></li>
+                    <li><span class="formula">A<sub>2</sub> + 3B<sub>2</sub> &rarr; 2AB<sub>3</sub></span></li>
+                </ol>
+            </div>
+             <div class="question">
+                <p><span class="question-number">۱۱</span>با توجه به معادله واکنش زیر پس از موازنه، نام اکسید نیتروژن شرکت کرده در واکنش کدام است؟</p>
+                <p class="formula mt-2">aH<sub>2</sub>O(g) + bSO<sub>2</sub>(g) + cN<sub>x</sub>O<sub>y</sub>(g) &rarr; 2H<sub>2</sub>SO<sub>4</sub>(g) + cN<sub>2</sub>(g)</p>
+                 <ol class="list-decimal list-inside mt-2 space-y-1 pr-4">
+                    <li>نیتروژن دی اکسید</li>
+                    <li>دی نیتروژن مونواکسید</li>
+                    <li>دی نیتروژن تری اکسید</li>
+                    <li>دی نیتروژن تترا اکسید</li>
+                </ol>
+            </div>
+             <div class="question">
+                <p><span class="question-number">۱۲</span>اگر در واکنش زیر پس از موازنه ضریب استوکیومتری آب و اکسیژن به ترتیب برابر ۱۰ و ۱ باشد، ضریب استوکیومتری نیتروژن کدام است؟</p>
+                <p class="formula mt-2">C<sub>3</sub>H<sub>5</sub>(NO<sub>3</sub>)<sub>x</sub> &rarr; CO<sub>2</sub> + H<sub>2</sub>O + N<sub>2</sub> + O<sub>2</sub></p>
+            </div>
+        </div>
+        
+        <!-- Card 5: Fast Balancing Method -->
+        <div class="card">
+            <h2>روش‌های تستی موازنه: سوختن هیدروکربن‌ها</h2>
+            <p>برای موازنه سریع سوختن هیدروکربن‌ها (<span class="formula">C<sub>x</sub>H<sub>y</sub></span>) و مواد آلی اکسیژن‌دار (<span class="formula">C<sub>x</sub>H<sub>y</sub>O<sub>z</sub></span>) از روش زیر استفاده کنید.</p>
+            <h3 class="mt-4">نکات سوختن:</h3>
+            <ul class="list-disc list-inside space-y-2">
+                <li><strong>سوختن:</strong> واکنش سریع با اکسیژن (<span class="formula">O<sub>2</sub></span>).</li>
+                <li><strong>سوختن کامل:</strong> فرآورده‌ها <span class="formula">CO<sub>2</sub></span> و <span class="formula">H<sub>2</sub>O</span> هستند و رنگ شعله آبی است.</li>
+                <li><strong>سوختن ناقص:</strong> فرآورده‌ها <span class="formula">CO</span> و <span class="formula">H<sub>2</sub>O</span> هستند و رنگ شعله زرد است.</li>
+            </ul>
+            <h3 class="mt-6">روش موازنه سریع:</h3>
+            <p>به ماده آلی ضریب ۱ بدهید. سپس به تعداد کربن، <span class="formula">CO<sub>2</sub></span> تولید می‌شود و نصف تعداد هیدروژن‌ها، <span class="formula">H<sub>2</sub>O</span> تولید می‌شود. در آخر، اکسیژن را به صورت عادی موازنه کنید.</p>
+            <div class="note">
+                <p><strong>توجه:</strong> حالت فیزیکی آب (<span class="formula">H<sub>2</sub>O</span>) را در دمای اتاق (25°C) و شرایط STP به صورت مایع (l) در نظر بگیرید.</p>
+            </div>
+             <div class="question">
+                <p><span class="question-number">۱۳</span>مجموع اعداد x, y, m و z در کدام گزینه به درستی آمده است؟</p>
+                <p class="formula mt-2">mC<sub>x</sub>H<sub>y</sub>O<sub>z</sub> + 11O<sub>2</sub> &rarr; 12CO<sub>2</sub> + 10H<sub>2</sub>O</p>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <footer class="text-center mt-10 py-6 border-t border-gray-200">
+            <p class="text-gray-500">موفق و پیروز باشید!</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
